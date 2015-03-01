@@ -1,3 +1,14 @@
++<h1><%= @team_name %> </h1>
++<h2><%= @team_motto %> </h2>
 
+<h2>The Heros</h2>
+
+<% @heros.each do |hero, details| %>
+<ul>
+    <% details.each do |key, value| %>
+    <li><%=key.capitalize%>: <%= value %> </li>
+<% end %>
+</ul>
+<%end%>
 
 
